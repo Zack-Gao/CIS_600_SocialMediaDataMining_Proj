@@ -18,10 +18,11 @@ def oauth_login():
         Twitter API
     """
 
-    CONSUMER_KEY = 'IMKNSTaK34HCHXCtZ3CEmm7MZ'
-    CONSUMER_SECRET = 'xHPrHX5JlYvkECUVGjA1mGjSA7mKXgagXY3rral2pXJGrd3rsL'
-    OAUTH_TOKEN = '865048473988505600-TytCBfh66g6c5tgBmrqRketcc6DT4Lo'
-    OAUTH_TOKEN_SECRET = 'RpLH9dtRcCTdYvUot9SscfSxB6J13Wu9mDFRcTavjIWR4'
+    # fill in the oauth keys and secrets of yours
+    CONSUMER_KEY = ''
+    CONSUMER_SECRET = ''
+    OAUTH_TOKEN = ''
+    OAUTH_TOKEN_SECRET = ''
     auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
     twitter_api = twitter.Twitter(auth=auth)
     print(twitter_api)
